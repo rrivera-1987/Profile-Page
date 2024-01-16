@@ -18,9 +18,9 @@ const Homepage = () => {
                     <div className="col-lg-12 text-center">
                         <hr style={{ marginBottom: '3rem' }} />
                         <h1 className="font-weight-bold mb-3"
-                            style={{ fontFamily: 'Bungee Spice', color: '#cc5500' }}>Ramon A. Rivera</h1>
-                        <h1 className="font-weight-bold"
-                            style={{ fontFamily: 'Bungee Spice', color: '#cc5500' }}>Tech Apprentice</h1>
+                            style={{ fontFamily: 'Bungee Spice', fontSize: '50px' }}>Ramon A. Rivera</h1>
+                        <h1 className="font-weight-bold mb-3"
+                            style={{ fontFamily: 'Bungee Spice', fontSize: '40px' }}>Tech Apprentice</h1>
                         <button 
                             style={{
                                 backgroundColor: 'transparent', // Clear background
