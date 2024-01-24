@@ -5,7 +5,12 @@ import TechTransition from '../img/TechTransition.png';
 import logos from '../components/logoImports';
 
 const Homepage = () => {
+    const programmingSkillsRef = useRef(null);
 
+    const scrollProgrammingSkills = () => {
+            programmingSkillsRef.current?.scrollIntoView({ behavior: 'smooth' });
+    };
+    
     return (
         <>
             <Container style={{
@@ -23,19 +28,21 @@ const Homepage = () => {
                                 style={{ fontFamily: 'Bungee Spice', fontSize: '50px' }}>Ramon A. Rivera</h1>
                             <h1 className="font-weight-bold mb-3"
                                 style={{ fontFamily: 'Bungee Spice', fontSize: '40px' }}>Tech Apprentice</h1>
-                            <button
-                                style={{
-                                    backgroundColor: 'transparent', // Clear background
-                                    // color: '#cc5500', Text color
-                                    border: '2px solid #000000', // Black border
-                                    padding: '10px 20px',
-                                    borderRadius: '5px',
-                                    cursor: 'pointer',
-                                    fontFamily: 'Bungee Spice',
-                                    fontSize: '1.6rem',
-                                    marginTop: '20px',
-                                    transition: 'all 0.3s ease' // Smooth transition for hover effect
-                                }}
+                                <button
+                                    onClick={scrollProgrammingSkills}
+                                    style={{
+                                        backgroundColor: 'transparent', // Clear background
+                                        // color: '#cc5500', Text color
+                                        border: '2px solid #000000', // Black border
+                                        padding: '10px 20px',
+                                        borderRadius: '5px',
+                                        cursor: 'pointer',
+                                        fontFamily: 'Bungee Spice',
+                                        fontSize: '1.6rem',
+                                        marginTop: '20px',
+                                        textDecoration: 'none',
+                                        color: 'inherit'
+                                    }}
                                 onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#003366'} // Navy blue background on hover
                                 onMouseOut={(e) => e.currentTarget.style.backgroundColor = 'transparent'} // Transparent background off hover
                                 onFocus={(e) => e.currentTarget.style.backgroundColor = '#003366'} // Navy blue background on focus
@@ -47,41 +54,99 @@ const Homepage = () => {
                     </div>
                 </div>
             </Container>
-            <Container fluid style={{ backgroundColor: '#003366', paddingTop: '50px', paddingBottom: '50px' }}>
+            <Container fluid id='programmingSkills' style={{ backgroundColor: '#003366', paddingTop: '50px', paddingBottom: '50px' }}
+                       ref={programmingSkillsRef} >
                 <div className='container text-center'
                     style={{ border: '2px round transparent', backgroundColor: 'white', padding: '20px' }}>
                     <h1 className='font-weight-bold mb-3'
                         style={{
                             fontFamily: 'Indie Flower',
                             textDecoration: 'underline'
-                        }}>Programming Skills</h1>
+                        }}
+                        ref={programmingSkillsRef}>Programming Skills</h1>
                     <div className='row justify-content-center'>
                         <div className='col-3'>
-                            <img src={logos.html} alt='HTML5' style={{ width: '215px', height: 'auto' }} />
+                            <img src={logos.html} alt='HTML5'
+                                style={{
+                                    width: '270px',
+                                    height: '250px',
+                                    borderRadius: '10px',
+                                    marginBottom: '50px',
+                                    boxShadow: 'gray 10px 5px 5px'
+                                }} />
                         </div>
                         <div className='col-3'>
-                            <img src={logos.css} alt='CSS3' style={{ width: '250px', height: 'auto' }} />
+                            <img src={logos.css} alt='CSS3'
+                                style={{
+                                    width: '255px',
+                                    height: '245px',
+                                    borderRadius: '10px',
+                                    marginBottom: '50px',
+                                    boxShadow: 'gray 10px 5px 5px'
+                                }} />
                         </div>
                         <div className='col-3'>
-                            <img src={logos.javascript} alt='JavaScript' style={{ width: '350px', height: 'auto' }} />
+                            <img src={logos.javascript} alt='JavaScript'
+                                style={{
+                                    width: '255px',
+                                    height: '250px',
+                                    borderRadius: '10px',
+                                    marginBottom: '50px',
+                                    boxShadow: 'gray 10px 5px 5px'
+                                }} />
                         </div>
                         <div className='col-3'>
-                            <img src={logos.nodeJS} alt='NodeJS' style={{ maxWidth: '100%', height: 'auto' }} />
+                            <img src={logos.nodeJS} alt='NodeJS'
+                                style={{
+                                    width: '260px',
+                                    height: '245px',
+                                    borderRadius: '10px',
+                                    marginBottom: '50px',
+                                    boxShadow: 'gray 10px 5px 5px'
+                                }} />
                         </div>
                     </div>
 
                     <div className='row justify-content-center'>
                         <div className='col-3'>
-                            <img src={logos.python} alt='Python' style={{ width: '350px', height: '250px' }} />
+                            <img src={logos.python} alt='Python'
+                                style={{
+                                    width: '285px',
+                                    height: '245px',
+                                    borderRadius: '10px',
+                                    marginBottom: '50px',
+                                    boxShadow: 'gray 10px 5px 5px'
+                                }} />
                         </div>
                         <div className='col-3'>
-                            <img src={logos.react} alt='React' style={{ width: '100%', height: 'auto' }} />
+                            <img src={logos.react} alt='React'
+                                style={{
+                                    width: '265px',
+                                    height: '245px',
+                                    borderRadius: '10px',
+                                    marginBottom: '50px',
+                                    boxShadow: 'gray 10px 5px 5px'
+                                }} />
                         </div>
                         <div className='col-3'>
-                            <img src={logos.reactNative} alt='React Native' style={{ width: '100%', height: 'auto' }} />
+                            <img src={logos.reactNative} alt='React Native'
+                                style={{
+                                    width: '255px',
+                                    height: '245px',
+                                    borderRadius: '10px',
+                                    marginBottom: '50px',
+                                    boxShadow: 'gray 10px 5px 5px'
+                                }} />
                         </div>
                         <div className='col-3'>
-                            <img src={logos.redux} alt='Redux' style={{ width: '330px', height: '330px' }} />
+                            <img src={logos.redux} alt='Redux'
+                                style={{
+                                    width: '275px',
+                                    height: '245px',
+                                    borderRadius: '10px',
+                                    marginBottom: '50px',
+                                    boxShadow: 'gray 10px 5px 5px'
+                                }} />
                         </div>
                     </div>
                 </div>
