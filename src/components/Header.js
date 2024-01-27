@@ -43,7 +43,7 @@ const Header = () => {
                 <Collapse isOpen={isOpen} navbar>
                     <Nav navbar className="ms-auto">
                         <NavItem>
-                            <NavLink tag={Link} to='/about'>About</NavLink>
+                            <NavLink tag={Link} to='/about'>About Me</NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink tag={Link} to='/projects'>Projects</NavLink>
