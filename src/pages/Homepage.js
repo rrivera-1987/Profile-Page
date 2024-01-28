@@ -12,13 +12,13 @@ const Homepage = () => {
     };
 
     const textStyle = {
-        fontSize: '15px', // Adjust the font size as needed
+        fontSize: '20px', // Adjust the font size as needed
         marginBottom: '10px'
     };
 
     const labelStyle = {
         fontWeight: 'bold', // Make labels bold
-        fontSize: '18px', // Keep label font size consistent
+        fontSize: '25px', // Keep label font size consistent
         marginBottom: '5px'
     };
     
@@ -66,7 +66,7 @@ const Homepage = () => {
                 </div>
             </Container>
             <Container fluid style={{ backgroundColor: '#003366', paddingTop: '50px', paddingBottom: '50px' }}>
-                <Card className='text-center'
+                <Card className='container text-center fade-up'
                     style={{ border: '2px solid white', backgroundColor: 'white', padding: '20px' }}>
                     <CardBody>
                         <h1 className='font-weight-bold mb-3'
@@ -95,7 +95,7 @@ const Homepage = () => {
             </Container>
             <Container fluid id='programmingSkills' style={{ backgroundColor: '#003366', paddingTop: '50px', paddingBottom: '50px' }}
                        ref={programmingSkillsRef} >
-                <Card className='container text-center'
+                <Card className='container text-center fade-up'
                     style={{ border: '2px solid white', backgroundColor: 'white', padding: '20px' }}>
                     <CardBody>
                         <h1 className='font-weight-bold mb-3'
