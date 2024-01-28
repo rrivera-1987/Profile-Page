@@ -16,7 +16,7 @@ html {
   scroll-behavior: smooth;
 }
 
-@keyframes fadeUp {
+/*@keyframes fadeUp {
   from {
     opacity: 0;
     transform: translateY(20px);
@@ -29,4 +29,4 @@ html {
 
 .fade-up {
   animation: fadeUp 5s ease-out;
-}
+}*/
