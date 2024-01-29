@@ -101,8 +101,8 @@ const Homepage = () => {
                                 </Col>
                                 <Col md={6}>
                                     <p style={textStyle}>
-                                        I am an experienced Chef, transitioning to a rewarding tech career. Passionate about culinary excellence and now embracing the exciting world of technology.
-                                        I am currently undergoing an intensive bootcamp through Nucamp Coding bootcamp, training in software engineering.
+                                        I am an experienced Chef, transitioning to a rewarding tech career. 
+                                        Passionate about culinary excellence and now embracing the exciting world of technology.
                                         With a strong background in culinary arts, I bring attention to detail, creativity and problem-solving abilities to my work,
                                         thriving under pressure and delivering top-notch results to the best of my abilities.
                                         Fueled by my curiosity and deep interest in technology's transformative power, I am excited to start this new journey.
