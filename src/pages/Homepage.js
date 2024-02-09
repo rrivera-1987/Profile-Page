@@ -5,6 +5,7 @@ import { useInView } from 'react-intersection-observer';
 //import { Link } from 'react-router-dom';
 import TechTransition from '../img/TechTransition.png';
 import logos from '../components/logoImports';
+import profilePic from '../img/Profile-Picture.jpg';
 
 const Homepage = () => {
     const programmingSkillsRef = useRef(null);
@@ -91,7 +92,11 @@ const Homepage = () => {
                             <h1 className='font-weight-bold mb-3'
                                 style={{ fontFamily: 'Indie Flower', textDecoration: 'underline' }}>About Me</h1>
                             <Row>
-                                <Col md={6} style={{ borderRight: '2px solid #003366' }}> {/* Add a border to the right */}
+                                <Col md={3} className='text-center'>
+                                    <img src={profilePic} alt='Ramon A. Rivera'
+                                        style={{ maxWidth: '100%', height: 'auto', borderRadius: '50%' }} />
+                                </Col>
+                                <Col md={4}> {/* Adjusted for proper grid layout */}
                                     <div style={labelStyle}>Name:</div>
                                     <div style={textStyle}>Ramon A. Rivera</div>
                                     <div style={labelStyle}>Email:</div>
@@ -99,9 +104,12 @@ const Homepage = () => {
                                     <div style={labelStyle}>Phone:</div>
                                     <div style={textStyle}>(787) 550-4572</div>
                                 </Col>
-                                <Col md={6}>
+                                <Col md={1} className='d-none d-md-block'>
+                                    <hr style={{ borderLeft: '2px solid #003366', height: '100%', marginLeft: '50%' }} />
+                                </Col>
+                                <Col md={4}> {/* This ensures it uses full width of the parent column */}
                                     <p style={textStyle}>
-                                        I am an experienced Chef, transitioning to a rewarding tech career. 
+                                        I am an experienced Chef, transitioning to a rewarding tech career.
                                         Passionate about culinary excellence and now embracing the exciting world of technology.
                                         With a strong background in culinary arts, I bring attention to detail, creativity and problem-solving abilities to my work,
                                         thriving under pressure and delivering top-notch results to the best of my abilities.

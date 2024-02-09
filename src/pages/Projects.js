@@ -9,11 +9,11 @@ const ProjectsPage = () => {
                 <Col md={6}>
                     <Card>
                         <CardBody>
-                            <CardTitle tag="h5">Project 1</CardTitle>
-                            <CardText>
-                                {/* Project description here */}
+                            <CardTitle tag="h5">Banking App</CardTitle>
+                            <CardText>Project about a simple banking app using Python. You can deposit and withdraw money and
+                                verify your balance.
                             </CardText>
-                            <Button href="https://github.com/yourusername/project1" target="_blank" color="primary">GitHub</Button>
+                            <Button href="https://github.com/rrivera-1987/Python-Banking-App" target="_blank" color="primary">GitHub</Button>
                             <Button href="https://yourproject1host.com" target="_blank" color="secondary" className="ms-2">Live Demo</Button>
                         </CardBody>
                     </Card>
