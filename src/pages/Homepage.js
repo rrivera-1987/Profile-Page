@@ -91,24 +91,26 @@ const Homepage = () => {
                         <CardBody>
                             <h1 className='font-weight-bold mb-3'
                                 style={{ fontFamily: 'Indie Flower', textDecoration: 'underline' }}>About Me</h1>
-                            <Row>
+                            <Row className='align-items-center'>
                                 <Col md={3} className='text-center'>
                                     <img src={profilePic} alt='Ramon A. Rivera'
-                                        style={{ maxWidth: '100%', height: 'auto', borderRadius: '50%' }} />
+                                        style={{ maxWidth: '40%', borderRadius: '50%', display: 'inline-block' }} />
                                 </Col>
-                                <Col md={4}> {/* Adjusted for proper grid layout */}
-                                    <div style={labelStyle}>Name:</div>
-                                    <div style={textStyle}>Ramon A. Rivera</div>
-                                    <div style={labelStyle}>Email:</div>
-                                    <div style={textStyle}>ramonrivera550@gmail.com</div>
-                                    <div style={labelStyle}>Phone:</div>
-                                    <div style={textStyle}>(787) 550-4572</div>
+                                <Col md={3} style={{ borderRight: '2px solid #003366', paddingLeft: '2px' }}> 
+                                    <div style={{ textAlign: 'left' }}>
+                                        <div style={labelStyle}>Name:</div>
+                                        <div style={textStyle}>Ramon A. Rivera</div>
+                                        <div style={labelStyle}>Email:</div>
+                                        <div style={textStyle}>ramonrivera550@gmail.com</div>
+                                        <div style={labelStyle}>Phone:</div>
+                                        <div style={textStyle}>(787) 550-4572</div>
+                                    </div>
                                 </Col>
-                                <Col md={1} className='d-none d-md-block'>
-                                    <hr style={{ borderLeft: '2px solid #003366', height: '100%', marginLeft: '50%' }} />
+                                <Col md={1} className="d-flex justify-content-center" style={{ maxWidth: '2px', overflow: 'hidden' }}>
+                                    <div style={{ width: '2px', backgroundColor: '#003366', minHeight: '100%' }}></div> 
                                 </Col>
-                                <Col md={4}> {/* This ensures it uses full width of the parent column */}
-                                    <p style={textStyle}>
+                                <Col md={5} style={{ paddingLeft: '50px' }}> 
+                                    <p style={{ ...textStyle, textAlign: 'left' }}>
                                         I am an experienced Chef, transitioning to a rewarding tech career.
                                         Passionate about culinary excellence and now embracing the exciting world of technology.
                                         With a strong background in culinary arts, I bring attention to detail, creativity and problem-solving abilities to my work,
